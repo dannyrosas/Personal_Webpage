@@ -20,7 +20,17 @@
             </nav>
         </header>
         <main>
-            
+            <form id="form" action="" class="formulario">
+                <h3 class="formulario_titulo"><span>Contáctenos</span></h3>
+                <label for="name" class="formulario__label">Nombre Completo <span>*</span></label>
+                <input name="name" class="formulario__input" required type="text" id="name" placeholder="Nombres Apellidos">
+                <label for="email" class="formulario__label">Correo electrónico <span>*</span></label>
+                <input name="email"  class="formulario__input" type="text" id="email" required placeholder="example@gmail.com">
+                <label for="message" class="formulario__label">Mensaje</label>
+                <textarea id="message"  name="message" id="" cols="30" rows="10"></textarea>
+                <button type="submit" class="formulario__submit">enviar mensaje</button>
+              </form>
+              <a href="knd0326@gmail.com" id="send"></a>
         </main>
         <footer>
             <ul class="redes">
@@ -29,5 +39,20 @@
                 <li><a href="https://www.linkedin.com/in/daniel-rosas-esteban-67b203224/" target="_blank">LinkedIn</a></li>
             </ul>
         </footer>
+        <script>
+             
+            const $form = document.querySelector('#form')
+            const $buttonMailto = document.querySelector('#send')
+
+            $form.addEventListener('submit', handleSubmit)
+
+            function handleSubmit(event) {
+            event.preventDefault()
+            const form = new FormData(this)
+            $buttonMailto.setAttribute('href', `mailto:knd0326@gmail.com?subject=nombre ${form.get('name')}  correo ${form.get('email')}&body=${form.get('message')}`)
+            $buttonMailto.click()
+            }
+        </script>
+        
     </body>
 </html>
