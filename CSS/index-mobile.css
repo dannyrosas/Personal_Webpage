@@ -6,3 +6,154 @@
 html{
     font-size: 62.5%;
 }
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    width: 100%;
+    height: 60px;   
+}
+header nav{
+    display: flex;
+    justify-content: flex-end;
+}
+header nav .nav-right{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    list-style: none;
+    justify-content: right;
+    align-items: center;
+    font-size: 2.6rem;
+    background-color: #212F3C ;
+    box-sizing: border-box;
+    
+}
+nav .nav-right a{
+    margin-right: 30px;
+    color:white;
+    background-color: #196F3D;
+    border-radius: 100px;
+    padding: 12px 12px;
+}
+nav .nav-right a:hover{
+    color: #212F3C;
+    box-shadow: 0 1px 8px 0 #2ECC71;
+}
+nav .nav-right a:active{
+    color: #2ECC71;
+    box-shadow: 0 1px 8px 0 #2ECC71;
+}
+.contenedor{
+    width: 90%;
+    height: 500px;
+    margin: 30px auto;
+    border: 1px solid gray;
+}
+.izquierda, .derecha{
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #212F3C;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    font-size: 3.6rem;
+    font-weight: bold;
+    color:white;
+    cursor: pointer;
+}
+.izquierda{
+    left: 10px;
+}
+.derecha{
+    right: 10px;
+}
+.izquierda:hover,.derecha:hover{
+    background-color: white;
+    color:#212F3C;
+    border: 2px solid #212F3C;
+}
+.img{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+    background-position: 50%;
+}
+.bienvenida{
+    width: 90%;
+    height: auto;
+    margin: 50px auto;
+    }
+.bienvenida h1{
+    font-size: 5.6rem;
+    text-align: center;
+}
+.bienvenida p{
+    font-size: 3.6rem;
+    text-align: center;
+}
+
+.introduccion{
+    font-size: 2.4rem;
+    text-align: center;
+    width: 90%;
+    height: auto;
+    margin: 50px auto;
+    font-weight: bold;
+    font-style: italic;
+}
+.introduccion img{
+    width: 300px;
+    height: auto;
+    border-radius: 100%;
+}
+
+
+footer{
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    display: grid;
+    align-items: center;
+    font-size: 12px;
+    background-color: #212F3C;
+    border-top: 1px solid #212F3C;
+    
+    
+}
+
+footer .redes{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    
+}
+footer .redes a{
+    margin-right: 30px;
+    color:white;
+    background-color: #196F3D;
+    border-radius: 100px;
+    padding: 12px 12px;
+}
+footer .redes a:hover{
+    color: #212F3C;
+    box-shadow: 0 1px 8px 0 #2ECC71;
+}
+
+
+
+
